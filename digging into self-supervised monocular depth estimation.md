@@ -54,9 +54,7 @@ The combination of appearance based loss and an error fitting term has also been
 
 problem: there are many possible incorrect depths.
 
-solution: 1. enforce smoothness in the depth maps.
-
-          2. compute photo-consistency on patches when solving for per-pixel depth via global optimization
+solution: 1. enforce smoothness in the depth maps.          2. compute photo-consistency on patches when solving for per-pixel depth via global optimization
           
 **Our solution: formulate our problem as the minimization of a photometric reprojection error when training.**
 
@@ -67,7 +65,7 @@ solution: 1. enforce smoothness in the depth maps.
 
 This paper proposed several methods to close the gap between monocular models and best fully-supervised models.
 
-1. per-pixel minimum reprojection loss
+###### per-pixel minimum reprojection loss
 
 problem: 1. out-of-view pixels  2. occluded pixels
 
@@ -75,11 +73,11 @@ existing solution: use average (cannot solve the second problem)
 
 our solution: use minimum (can solve both)
 
-##### auto-masking stationary pixels
+###### auto-masking stationary pixels
 
 When the camera is static and the object is moving, we introduce a per-pixel mask *μ* to the loss.
 
-##### multi-scale estimation
+###### multi-scale estimation
 
 problem: local optimal 
 
