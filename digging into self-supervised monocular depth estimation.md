@@ -72,7 +72,7 @@ solution: 1. enforce smoothness in the depth maps.          2. compute photo-con
 
 ##### improved self-supervised depth estimation
 
-This paper proposed several methods to close the gap between monocular models and best fully-supervised models.
+*This paper proposed several methods to close the gap between monocular models and best fully-supervised models.*
 
 ###### per-pixel minimum reprojection loss
 
