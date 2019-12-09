@@ -52,6 +52,59 @@ The combination of appearance based loss and an error fitting term has also been
 
 ##### self-supervised training
 
+problem: there are many possible incorrect depths.
+
+solution: 1. enforce smoothness in the depth maps.
+
+          2. compute photo-consistency on patches when solving for per-pixel depth via global optimization
+          
+**Our solution: formulate our problem as the minimization of a photometric reprojection error when training.**
+
+- **As for stereo training, we solve for camera pose and depth simultaneously to minimize L<sub>p</sub>.**
+- **As for monocular training, we use two frames temporally adjacent to I<sub>t</sub> as source frames.**
+
+##### improved self-supervised depth estimation
+
+This paper proposed several methods to close the gap between monocular models and best fully-supervised models.
+
+1. per-pixel minimum reprojection loss
+
+problem: 1. out-of-view pixels  2. occluded pixels
+
+existing solution: use average (cannot solve the second problem)
+
+our solution: use minimum (can solve both)
+
+##### auto-masking stationary pixels
+
+When the camera is static and the object is moving, we introduce a per-pixel mask *μ* to the loss.
+
+##### multi-scale estimation
+
+problem: local optimal 
+
+existing solution: compute the photometric error on images at the resolution of each decoder.
+This method will create holes in the image and will complicate the task for depth network.
+
+our solution: instead of computing the photometric error, we do the following process: 1. upsample the lower resolution depth maps to the input image resolution. 2. reproject, resample  3. compute the error at this higher input resolution.
+
+**Note that the weights pretrained on ImageNet will lead to higher accuracy.**
+
+**We use reflection padding instead of zero padding, which leads the reduction of the border artifacts.**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
