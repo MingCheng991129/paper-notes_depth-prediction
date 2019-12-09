@@ -1,5 +1,7 @@
 ### digging into self-supervised monocular depth estimation
 
+-------------------------------------------------------
+
 ####  abstract
 
 This paper proposes:
@@ -7,6 +9,8 @@ This paper proposes:
 1. a minimum reprojection loss (robust)
 2. a full-resolution multi-scale sampling method (reduce visual artifacts)
 3. auto-tasking loss (ignore training pixels that violate camera motion assumptions)
+
+---------------------------------------------------------------
 
 #### introduction
 
@@ -30,6 +34,8 @@ This paper proposes three innovations:
 - an auto-masking approach (ignore pixels where no relative camera motion is observed)
 - a multi-scale appearance matching loss (a reduction in depth artifacts)
 
+--------------------------------------------------------
+
 #### related work
 
 ##### supervised depth estimation
@@ -48,6 +54,7 @@ It can improve the depth estimation performance compared to simple pairwise pixe
 
 The combination of appearance based loss and an error fitting term has also been used.
 
+----------------------------
 #### method
 
 ##### self-supervised training
@@ -60,6 +67,8 @@ solution: 1. enforce smoothness in the depth maps.          2. compute photo-con
 
 - **As for stereo training, we solve for camera pose and depth simultaneously to minimize L<sub>p</sub>.**
 - **As for monocular training, we use two frames temporally adjacent to I<sub>t</sub> as source frames.**
+
+
 
 ##### improved self-supervised depth estimation
 
