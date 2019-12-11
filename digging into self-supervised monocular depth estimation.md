@@ -99,6 +99,42 @@ our solution: instead of computing the photometric error, we do the following pr
 
 **We use reflection padding instead of zero padding, which leads the reduction of the border artifacts.**
 
+------------------------------
+
+#### Experiments
+
+This paper has validated that:
+1. the reprojection loss helps with occluded pixels
+2. the auto-masking improves results
+3. the multi-scale appearance matching loss improves accuracy
+
+##### KITTI Eigen Split
+some processes on dataset...
+
+###### KITTI Ablation Study
+To know how each component of the model contributes to the overall performance in monocular training. 
+
+**benefits of auto-masking:** the mask prevents objects moving at similar speeds to the camera and whole frames where the camera is static from contaminating loss. 
+
+**effect of ImageNet pretraining:** actually, as for some of the monocular depth prediction works, this paper can still get state-of-the-art results.
+
+
+##### Additional Datasets
+This paper also tests on other datasets: *KITTI Odometry, KITTI Depth Prediction Benchmark, Make3D.*
+
+---------------------
+#### Conclusion
+
+As mentioned above, the main idea of this paper is the three contributions. 
+
+
+
+
+
+
+
+
+
 
 
 
