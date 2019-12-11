@@ -8,7 +8,6 @@ This repository contains my notes of papers in the area of depth prediction.
   
 - *Geometry-Aware Symmetric Domain Adaptation for Monocular Depth Estimation.md*
 
-  [Shanshan Zhao, Huan Fu, Mingming Gong, Dacheng Tao; Geometry-Aware Symmetric Domain Adaptation for Monocular Depth Estimation. The IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2019, pp. 9788-9798]
-  (http://openaccess.thecvf.com/content_CVPR_2019/html/Zhao_Geometry-Aware_Symmetric_Domain_Adaptation_for_Monocular_Depth_Estimation_CVPR_2019_paper.html)
+  [Shanshan Zhao, Huan Fu, Mingming Gong, Dacheng Tao; Geometry-Aware Symmetric Domain Adaptation for Monocular Depth Estimation. The IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2019, pp. 9788-9798](http://openaccess.thecvf.com/content_CVPR_2019/html/Zhao_Geometry-Aware_Symmetric_Domain_Adaptation_for_Monocular_Depth_Estimation_CVPR_2019_paper.html)
 
 
