@@ -7,6 +7,8 @@ GASDA: to explore the labels in the synthetic data and epipolar geometry in the 
 
 [github](https://github.com/sshan-zhao/GASDA)
 
+----------------------------------------------
+
 ### Introduction
 
 existing problems(corresponding solutions): 
@@ -21,9 +23,45 @@ existing problems(corresponding solutions):
 
 - **performs well on KITTI and Make3D.**
 
+----------------------------------------------
+
 ### Related Work
 
 #### Monocular Depth Estimation
+
+probabilistic graphical models and non-parametric techniques: have limitations in performance
+
+High-performing depth estimators can be obtained relying on deep convolutional nn.
+
+Unsupervised depth estimation could be recast as an image reconstruction prolem.
+
+#### Domain Adaptation
+
+The domain adaptation is to address the problem that the model trained on one dataset may fail to generalize to another dataset.
+
+Several networks have been proposed but all of them **ignore the geometric structure of the natural images from the target domain.**
+
+---------------------------
+
+### Method
+
+#### Overview
+
+
+
+#### GASDA
+
+#### Inference
+
+
+
+--------------------
+
+### Experiments
+
+
+--------------------------
+### Conclusion
 
 
 
